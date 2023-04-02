@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PIS Stable Diffusion Client</string>
+    <string name="address_hint">Stable Diffusion WebUI Address</string>
+    <string name="connect_button_text">Connect</string>
+    <string name="menu_label_text">Connected to</string>
+    <string name="current_address">127.0.0.1:7860</string>
+    <string name="txt2img">TXT2IMG</string>
+    <string name="img2img">IMG2IMG</string>
+    <string name="png_info">PNG INFO</string>
+    <string name="blank">TBD</string>
+    <string name="disconnect">DISCONNECT</string>
+    <string name="prompt_edit_hint">Prompt</string>
+    <string name="negative_edit_hint">Negative Prompt</string>
+    <string name="steps_text">Steps</string>
+    <string name="sampler_text">Sampler</string>
+    <string name="generate_button_text">Generate</string>
+    <string name="image_description_mockup">Image description goes here.</string>
+</resources>
