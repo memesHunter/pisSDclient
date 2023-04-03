@@ -12,7 +12,7 @@
         android:theme="@style/Theme.PIS_SD_Client"
         tools:targetApi="31">
 
-        <activity android:name=".ConnectActivity"
+        <activity android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +20,6 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".SDMenuActivity" />
-        <activity android:name=".HistoryActivity" />
-        <activity android:name=".ImageViewActivity" />
-        <activity android:name=".TextToImgActivity" />
     </application>
 
 </manifest>

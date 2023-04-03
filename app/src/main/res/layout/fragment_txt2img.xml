@@ -1,9 +1,10 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
-    <!-- Prompt input field -->
     <EditText
         android:id="@+id/prompt_edit_text"
         android:layout_width="match_parent"
@@ -16,14 +17,15 @@
         android:minHeight="48dp"
         android:paddingHorizontal="16dp"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-    <!-- Negative input field -->
     <EditText
         android:id="@+id/negative_edit_text"
         android:layout_width="match_parent"
         android:layout_height="96dp"
-        android:layout_below="@id/prompt_edit_text"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/edit_text_border"
@@ -32,51 +34,57 @@
         android:minHeight="48dp"
         android:paddingHorizontal="16dp"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/prompt_edit_text"/>
 
-    <!-- Steps slider -->
     <TextView
         android:id="@+id/steps_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/negative_edit_text"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="32dp"
         android:text="@string/steps_text"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/negative_edit_text"/>
 
     <SeekBar
         android:id="@+id/steps_slider"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/steps_label"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
-        android:max="10" />
+        android:max="10"
+        app:layout_constraintTop_toBottomOf="@id/steps_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Sampler spinner -->
     <TextView
         android:id="@+id/sampler_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/steps_slider"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:text="@string/sampler_text"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/steps_slider"/>
 
     <Spinner
         android:id="@+id/sampler_spinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/sampler_label"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
-        android:entries="@array/sampler_options" />
+        android:entries="@array/sampler_options"
+        app:layout_constraintTop_toBottomOf="@+id/sampler_label"
+        app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Generate button -->
     <Button
         android:id="@+id/generate_button"
         android:layout_width="match_parent"
@@ -86,14 +94,9 @@
         android:layout_marginTop="32dp"
         android:text="@string/generate_button_text"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sampler_spinner"/>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="@color/white"
-        app:menu="@menu/bottom_nav_menu" />
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

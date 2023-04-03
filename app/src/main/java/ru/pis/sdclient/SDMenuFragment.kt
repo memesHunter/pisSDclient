@@ -2,18 +2,25 @@ package ru.pis.sdclient
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import android.widget.Button
-import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
 
-class SDMenuActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_menu)
 
-        val txt2img = findViewById<Button>(R.id.txt2img_button)
+class SDMenuFragment : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        val view = inflater.inflate(R.layout.fragment_sdmenu, container, false)
+
+        val txt2img = view.findViewById<Button>(R.id.txt2img_button)
         txt2img.setOnClickListener {
-            val intent = Intent(this, TextToImgActivity::class.java)
-            startActivity(intent)
+            switchToFragment(null, requireActivity(), TextToImgFragment())
         }
 
 //        val img2img = findViewById<Button>(R.id.img2img_button)
@@ -22,10 +29,9 @@ class SDMenuActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
-        val disconnect = findViewById<Button>(R.id.disconnect_button)
+        val disconnect = view.findViewById<Button>(R.id.disconnect_button)
         disconnect.setOnClickListener {
-            val intent = Intent(this, ConnectActivity::class.java)
-            startActivity(intent)
+            switchToFragment(null, requireActivity(), ConnectFragment())
         }
 
 //        val pngInfo = findViewById<Button>(R.id.png_info_button)
@@ -40,5 +46,7 @@ class SDMenuActivity : AppCompatActivity() {
 //            val intent = Intent(this, Activity4::class.java)
 //            startActivity(intent)
 //        }
+
+        return view
     }
 }
