@@ -16,7 +16,7 @@ class HistoryFragment : Fragment() {
 
     private lateinit var binding : FragmentHistoryBinding
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        binding = FragmentHistoryBinding.inflate(layoutInflater)
+        binding = FragmentHistoryBinding.inflate(inflater, container, false)
         binding.rv.adapter = HistoryAdapter(getImages(), OnItemClickListener())
         binding.rv.layoutManager = LinearLayoutManager(requireContext())
         return binding.root

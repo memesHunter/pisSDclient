@@ -15,4 +15,5 @@
     <string name="sampler_text">Sampler</string>
     <string name="generate_button_text">Generate</string>
     <string name="image_description_mockup">Image description goes here.</string>
+    <string name="connect_label">Connect</string>
 </resources>
