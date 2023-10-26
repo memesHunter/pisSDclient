@@ -6,4 +6,12 @@
         <item>DDIM</item>
         <item>UniPC</item>
     </string-array>
+    <string-array name="settings_list_locales_titles">
+        <item>English</item>
+        <item>Русский</item>
+    </string-array>
+    <string-array name="settings_list_locales_values">
+        <item>en</item>
+        <item>ru</item>
+    </string-array>
 </resources>

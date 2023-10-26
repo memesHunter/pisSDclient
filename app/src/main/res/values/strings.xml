@@ -2,18 +2,51 @@
     <string name="app_name">PIS Stable Diffusion Client</string>
     <string name="address_hint">Stable Diffusion WebUI Address</string>
     <string name="connect_button_text">Connect</string>
+    <string name="connected_button_text">Session</string>
     <string name="menu_label_text">Connected to</string>
-    <string name="current_address">127.0.0.1:7860</string>
     <string name="txt2img">TXT2IMG</string>
     <string name="img2img">IMG2IMG</string>
-    <string name="png_info">PNG INFO</string>
-    <string name="blank">TBD</string>
-    <string name="disconnect">DISCONNECT</string>
+    <string name="disconnect">Disconnect</string>
     <string name="prompt_edit_hint">Prompt</string>
     <string name="negative_edit_hint">Negative Prompt</string>
     <string name="steps_text">Steps</string>
     <string name="sampler_text">Sampler</string>
     <string name="generate_button_text">Generate</string>
-    <string name="image_description_mockup">Image description goes here.</string>
+
     <string name="connect_label">Connect</string>
+    <string name="image_description">Image</string>
+
+    <string name="select_image_button_text">Select image</string>
+    <string name="image_preview_description">Image preview</string>
+    <string name="select_image_text">Select Image</string>
+    <string name="denoising_strength_label">Denoising Strength</string>
+    <string name="save_button_text">Save</string>
+    <string name="share_button_text">Share</string>
+    <string name="delete_button_text">Delete</string>
+    <string name="toast_fail_ping">Failed to get response</string>
+    <string name="toast_fail_connect">Failed to connect</string>
+    <string name="toast_invalid_address">"Invalid address: "</string>
+    <string name="toast_fail_permission">Unable to share without permission</string>
+    <string name="toast_no_source_img">Unable to find source image</string>
+    <string name="share_title">Share image</string>
+    <string name="toast_delete_error">Error while deleting image</string>
+    <string name="toast_gen_error">Error while generating image</string>
+    <string name="toast_img_saved">Image saved</string>
+    <string name="textview_prompt">Prompt</string>
+    <string name="textview_negative">Negative prompt</string>
+    <string name="textview_steps">Steps</string>
+    <string name="textview_sampler">Sampler</string>
+    <string name="textview_image_size">Image size</string>
+    <string name="settings_label">Settings</string>
+    <string name="history_label">History</string>
+
+    <string name="setting_lang_select_title">Select language</string>
+    <string name="setting_lang_select_summary">Click to select language</string>
+    <string name="setting_addr_remember_title">Remember last used address</string>
+    <string name="setting_addr_remember_summary">Switch on to save address</string>
+    <string name="setting_addr_default_dialog">Enter address</string>
+    <string name="setting_addr_default_title">Edit default connection address</string>
+    <string name="setting_prompt_remember_title">Save latest prompt</string>
+    <string name="setting_prompt_remember_summary">Switch on to save latest prompt</string>
+    <string name="keep_image_size_text">keep image size</string>
 </resources>

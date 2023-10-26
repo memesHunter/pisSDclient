@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="en"
+        android:dialogTitle="@string/setting_lang_select_title"
+        android:entries="@array/settings_list_locales_titles"
+        android:entryValues="@array/settings_list_locales_values"
+        android:key="languages_list"
+        android:summary="@string/setting_lang_select_summary"
+        android:title="@string/setting_lang_select_title" />
+
+    <SwitchPreference
+        android:key="save_address_switch"
+        android:title="@string/setting_addr_remember_title"
+        android:summary="@string/setting_addr_remember_summary"
+        android:defaultValue="true"/>
+
+    <EditTextPreference
+        android:dialogTitle="@string/setting_addr_default_dialog"
+        android:key="default_address"
+        android:title="@string/setting_addr_default_title" />
+
+    <SwitchPreference
+        android:key="save_prompt_switch"
+        android:title="@string/setting_prompt_remember_title"
+        android:summary="@string/setting_prompt_remember_summary"
+        android:defaultValue="true"/>
+</PreferenceScreen>

@@ -1,14 +1,14 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
+        android:id="@+id/action_settings"
+        android:icon="@drawable/ic_settimgs_image"
+        android:title="@string/settings_label" />
+    <item
         android:id="@+id/action_connect"
-        android:icon="@drawable/connect_icon"
+        android:icon="@drawable/ic_connect_image"
         android:title="@string/connect_label" />
     <item
-        android:id="@+id/action_settings"
-        android:icon="@drawable/settings_icon"
-        android:title="Settings" />
-    <item
         android:id="@+id/action_history"
-        android:icon="@drawable/history_icon"
-        android:title="History" />
+        android:icon="@drawable/ic_history_image"
+        android:title="@string/history_label" />
 </menu>
